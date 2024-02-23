@@ -8,9 +8,62 @@
   <link rel="stylesheet" href="./src/css/main.css">
 </head>
 <body>
-  <header class="bg-success  text-white">header</header>
-  <main class="bg-primary  text-white">main</main>
-  <footer class="bg-warning  text-white">footer</footer>
+  
+<header>
+  <nav class="navbar navbar-expand-sm bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <img class="logo-size" src="./src/assets/img/logo.jpg" alt="graubünden-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="position-absolute top-100 start-0 w-100 bg-white z-2 navbar-collapse justify-content-around collapse show" id="navbarNavDropdown">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Courses
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Golfclub Lenzerheide</a></li>
+              <li><a class="dropdown-item" href="#">Golfclub Heidiland</a></li>
+              <li><a class="dropdown-item" href="#">Golfclub Alvaneu Bad</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div>
+      <h2 class="z-1 position-absolute top-50 start-50 translate-middle text-center text-light text-main">Graubünden Top Golf clubs</h2>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./src/assets/img/lenzerheide.jpeg" class="d-block w-100" alt="golfclub-lenzerheide">
+      </div>
+      <div class="carousel-item">
+        <img src="./src/assets/img/heidiland.jpg" class="d-block w-100" alt="golfclub-heidiland">
+      </div>
+      <div class="carousel-item">
+        <img src="./src/assets/img/alvaneubad.jpg" class="d-block w-100" alt="golfclub-alvaneubad">
+      </div>
+    </div>
+  </div>
+</main>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
